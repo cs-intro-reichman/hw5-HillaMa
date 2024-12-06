@@ -58,6 +58,7 @@ public class MyString {
             if(countChar(str1, str1.charAt(i)) > countChar(str2, str1.charAt(i))) {
                 return false;
             }
+            str2 = str2.replaceFirst(String.valueOf(str1.charAt(i)), "");
         }
         return true;
     }
