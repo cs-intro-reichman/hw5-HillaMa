@@ -108,10 +108,10 @@ public class Scrabble {
 				break;
 			}
 			if(!MyString.subsetOf(input, hand)) {
-				System.out.println("Word is not constructed by the given hand letters. Try again");
+				System.out.println("Word is not constructed from the given hand letters. Try again.");
 			}
 			else if(!isWordInDictionary(input)) {
-				System.out.println("No such word in the dictionary. Try again.");
+				System.out.println("The word is not in the dictionary. Try again.");
 			}
 			else {
 				score += wordScore(input);
