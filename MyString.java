@@ -113,10 +113,10 @@ public class MyString {
      */
     public static String remove(String str1, String str2) {
        if(str1 == null || str2 == null) {
-        return null;
+            return null;
        }
        if(str2.length() > str1.length()) {
-        return null;
+            return null;
        }
        for(int i = 0; i < str2.length(); i++) {
             if(str1.indexOf(str2.charAt(i)) != -1) {
