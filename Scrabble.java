@@ -115,14 +115,14 @@ public class Scrabble {
 			}
 			else {
 				score += wordScore(input);
-				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points");
+				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points\n");
 				hand = MyString.remove(hand, input);
 			}
 		}
 		if (hand.length() == 0) {
 	        System.out.println("Ran out of letters. Total score: " + score + " points");
 		} else {
-			System.out.print("End of hand. Total score: " + score + " points");
+			System.out.println("End of hand. Total score: " + score + " points");
 		}
 	}
 
